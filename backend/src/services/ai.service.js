@@ -18,7 +18,7 @@ const emailTool = tool(   // created a tool that can be used by LLM via langchai
     sendEmail,
     {
         name: "send_email",
-        description: "use this tool when user ask to send email",
+        description: "Use this tool whenever the user clearly or indirectly asks to send an email, such as “send this via email,” “mail this to someone,” or similar intent. The tool requires essential inputs including the recipient’s email address, subject, and message body. It must never return an empty response or an empty array. Instead, it should always provide a clear, structured outcome describing what happened. If the email is sent successfully, return a response indicating success along with the recipient’s email. If the email cannot be sent for any reason, return an error response with a specific and human-readable explanation. In cases where required fields are missing, the tool should not attempt to send the email and must instead return an error clearly listing the missing information. The goal is to ensure that every execution of this tool results in a meaningful, explicit response rather than silence or ambiguity.",
         schema: z.object({
             to: z.string().describe("reciever email address"),
             subject: z.string().describe("subject of email"),
