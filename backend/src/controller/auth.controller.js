@@ -40,7 +40,7 @@ async function register(req, res, next) {
                 <p>Hi ${username},</p>
                 <p>Thank you for registering at <strong>AtherAI</strong>. We're excited to have you on board!</p>
                 <p>Please verify your account by clicking on link below</p>
-                <a href='http://localhost:3000/api/auth/verify?token=${token}'>Verify</a>
+                <a href='https://aether-chatbot.onrender.com/api/auth/verify?token=${token}'>Verify</a>
                 <br>
                 <br>
                 <p>Best regards,</p>
@@ -335,7 +335,7 @@ async function resendEmail(req, res, next) {
                 <p>Hi ${emailExist.username},</p>
                 <p>Thank you for registering at <strong>Ather AI</strong>. We're excited to have you on board!</p>
                 <p>Please verify your account by clicking on link below</p>
-                <a href='http://localhost:3000/api/auth/verify?token=${token}'>Verify</a>
+                <a href='https://aether-chabot.onrender.com/api/auth/verify?token=${token}'>Verify</a>
                 <br>
                 <br>
                 <p>Best regards,</p>
